@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XEYRONOX | Cyberpunk Hacker Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cyberpunk Background Effects -->
+    <div class="cyber-bg"></div>
+    <div class="matrix-rain" id="matrixRain"></div>
+    
+    <!-- Navigation -->
+    <nav class="nav-header" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="cyber-text glow">XEYRONOX</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link cyber-link">Home</a></li>
+                <li><a href="#info" class="nav-link cyber-link">Info</a></li>
+                <li><a href="#skills" class="nav-link cyber-link">Skills</a></li>
+                <li><a href="#motto" class="nav-link cyber-link">Motto</a></li>
+                <li><a href="#contact" class="nav-link cyber-link">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-bg">
+            <img src="https://pplx-res.cloudinary.com/image/upload/v1755015852/pplx_project_search_images/b7db84da996ecb4511e855ca67cf99944a8ca70f.png" alt="Cyberpunk Background" class="hero-bg-img">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="terminal-window">
+                <div class="terminal-header">
+                    <div class="terminal-buttons">
+                        <span class="btn-close"></span>
+                        <span class="btn-minimize"></span>
+                        <span class="btn-maximize"></span>
+                    </div>
+                    <span class="terminal-title">phantom@xeyronox:~$</span>
+                </div>
+                <div class="terminal-body">
+                    <div class="terminal-line">
+                        <span class="prompt">xeyronox@phantom~$</span>
+                        <span class="command">whoami</span>
+                        <span class="cursor" id="cursor">|</span>
+                    </div>
+                    <div class="terminal-output" id="terminalOutput">
+                        <div class="output-line hidden" data-delay="1000">
+                            <span class="emoji">🧠</span> <span class="label">Name</span>      : <span class="value">Xeyronox</span>
+                        </div>
+                        <div class="output-line hidden" data-delay="1500">
+                            <span class="emoji">🎭</span> <span class="label">Alias</span>     : <span class="value">Black/Red Hat Hacker 👨‍💻  | 💲 Trader | 🕷️ Bug Bounty Hunter</span>
+                        </div>
+                        <div class="output-line hidden" data-delay="2000">
+                            <span class="emoji">📍</span> <span class="label">Location</span>  : <span class="value">Deep-Wired | 🇮🇳 Phantom Frequency</span>
+                        </div>
+                        <div class="output-line hidden" data-delay="2500">
+                            <span class="emoji">🗣️</span> <span class="label">Comment</span>   : <span class="value">Learning in Silence | Executing with Precision</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Section -->
+    <section id="info" class="info-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="terminal-prompt">
+                    <span class="prompt">xeyronox@phantom~$</span>
+                    <span class="command">./activity_log.sh</span>
+                </div>
+                <h2 class="section-title cyber-text">Latest Operations</h2>
+            </div>
+            <div class="info-grid">
+                <div class="info-card cyber-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-header">
+                        <span class="status-indicator active"></span>
+                        <h3>Active Operations</h3>
+                    </div>
+                    <div class="card-content">
+                        <div class="operation-item">
+                            <span class="op-icon">☠️</span>
+                            <span>Private Bug Bounty Reports submitted</span>
+                        </div>
+                        <div class="operation-item">
+                            <span class="op-icon">📊</span>
+                            <span>Building Crypto & Forex Automation Scripts</span>
+                        </div>
+                        <div class="operation-item">
+                            <span class="op-icon">⚔</span>
+                            <span>New PoC written in Rust & Python for Telegram Botnets</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-card cyber-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-header">
+                        <span class="status-indicator success"></span>
+                        <h3>Recent Ops</h3>
+                    </div>
+                    <div class="card-content">
+                        <div class="operation-item">
+                            <span class="op-icon">✔️</span>
+                            <span>Bug Bounty Submissions (HackerOne,Bugbase)</span>
+                        </div>
+                        <div class="operation-item">
+                            <span class="op-icon">✔️</span>
+                            <span>Crypto/Forex Trading Automation Research</span>
+                        </div>
+                        <div class="operation-item">
+                            <span class="op-icon">👨‍💻</span>
+                            <span>Private Exploit Repo Synchronization</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="terminal-prompt">
+                    <span class="prompt">xeyronox@phantom~$</span>
+                    <span class="command">cat skills.txt</span>
+                </div>
+                <h2 class="section-title cyber-text">Technical Arsenal</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card cyber-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skill-header">
+                        <span class="skill-icon">💀</span>
+                        <h3>Malware Engineering</h3>
+                    </div>
+                    <p>Obfuscation, Payload Logic, Static & Dynamic Analysis</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="95"></div>
+                    </div>
+                </div>
+                <div class="skill-card cyber-card" data-aos="fade-up" data-aos-delay="150">
+                    <div class="skill-header">
+                        <span class="skill-icon">📱</span>
+                        <h3>APK Modding</h3>
+                    </div>
+                    <p>Reverse Engineering, Smali Rebuilds, Signature Bypass</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="90"></div>
+                    </div>
+                </div>
+                <div class="skill-card cyber-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skill-header">
+                        <span class="skill-icon">⚡</span>
+                        <h3>DDoS / R-DDoS Ops</h3>
+                    </div>
+                    <p>Flood Scripts, Proxy Chains, Server-Load Attacks</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="88"></div>
+                    </div>
+                </div>
+                <div class="skill-card cyber-card" data-aos="fade-up" data-aos-delay="250">
+                    <div class="skill-header">
+                        <span class="skill-icon">🐍</span>
+                        <h3>Python</h3>
+                    </div>
+                    <p>AI Bots, Telegram Scripts, Automation Tools</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="92"></div>
+                    </div>
+                </div>
+                <div class="skill-card cyber-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="skill-header">
+                        <span class="skill-icon">🦀</span>
+                        <h3>Rust</h3>
+                    </div>
+                    <p>High-Speed CLI Tools, Memory-Safe Backends</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="85"></div>
+                    </div>
+                </div>
+                <div class="skill-card cyber-card" data-aos="fade-up" data-aos-delay="350">
+                    <div class="skill-header">
+                        <span class="skill-icon">⚙️</span>
+                        <h3>C / C++ / C#</h3>
+                    </div>
+                    <p>Memory Management, Payload Simulators, Reverse-Shell Tools</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="87"></div>
+                    </div>
+                </div>
+                <div class="skill-card cyber-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="skill-header">
+                        <span class="skill-icon">🌐</span>
+                        <h3>Web Stack</h3>
+                    </div>
+                    <p>HTML, CSS, JavaScript | Web UI Craft, Injection Sandbox</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="94"></div>
+                    </div>
+                </div>
+                <div class="skill-card cyber-card" data-aos="fade-up" data-aos-delay="450">
+                    <div class="skill-header">
+                        <span class="skill-icon">⚛️</span>
+                        <h3>React</h3>
+                    </div>
+                    <p>Hook Systems, Frontend Components</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="89"></div>
+                    </div>
+                </div>
+                <div class="skill-card cyber-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="skill-header">
+                        <span class="skill-icon">🤖</span>
+                        <h3>Kotlin</h3>
+                    </div>
+                    <p>Android Mods, Native App Exploits</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="83"></div>
+                    </div>
+                </div>
+                <div class="skill-card cyber-card" data-aos="fade-up" data-aos-delay="550">
+                    <div class="skill-header">
+                        <span class="skill-icon">🎯</span>
+                        <h3>Web Exploits</h3>
+                    </div>
+                    <p>XSS, LFI, Auth Bypass</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="91"></div>
+                    </div>
+                </div>
+                <div class="skill-card cyber-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="skill-header">
+                        <span class="skill-icon">🔍</span>
+                        <h3>Pentesting</h3>
+                    </div>
+                    <p>Nmap Recon, BurpSuite, Wireshark</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="93"></div>
+                    </div>
+                </div>
+                <div class="skill-card cyber-card" data-aos="fade-up" data-aos-delay="650">
+                    <div class="skill-header">
+                        <span class="skill-icon">🌐</span>
+                        <h3>Network Tools</h3>
+                    </div>
+                    <p>Packet Injection, ARP Spoofing, VPN Cloaking</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="86"></div>
+                    </div>
+                </div>
+                <div class="skill-card cyber-card" data-aos="fade-up" data-aos-delay="700">
+                    <div class="skill-header">
+                        <span class="skill-icon">🔧</span>
+                        <h3>Reverse Engineering</h3>
+                    </div>
+                    <p>Binary Debugging, String Table Analysis</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="90"></div>
+                    </div>
+                </div>
+                <div class="skill-card cyber-card" data-aos="fade-up" data-aos-delay="750">
+                    <div class="skill-header">
+                        <span class="skill-icon">🎭</span>
+                        <h3>Social Engineering</h3>
+                    </div>
+                    <p>Phishing Kits, Behavioral Pretexting</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="84"></div>
+                    </div>
+                </div>
+                <div class="skill-card cyber-card" data-aos="fade-up" data-aos-delay="800">
+                    <div class="skill-header">
+                        <span class="skill-icon">🤖</span>
+                        <h3>Botnet Logic</h3>
+                    </div>
+                    <p>Telegram API Sync, Script Chaining</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="87"></div>
+                    </div>
+                </div>
+                <div class="skill-card cyber-card" data-aos="fade-up" data-aos-delay="850">
+                    <div class="skill-header">
+                        <span class="skill-icon">🕵️</span>
+                        <h3>Dark Web Ops</h3>
+                    </div>
+                    <p>Tails OS, Hidden Services, OPSEC Layers</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="89"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Motto Section -->
+    <section id="motto" class="motto-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="terminal-prompt">
+                    <span class="prompt">xeyronox@phantom~$</span>
+                    <span class="command">cat motto.txt</span>
+                </div>
+                <h2 class="section-title cyber-text">Core Principles</h2>
+            </div>
+            <div class="motto-grid">
+                <div class="motto-card cyber-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="motto-icon">🔐</div>
+                    <blockquote class="motto-text">"Code isn't just logic. It's a weapon."</blockquote>
+                </div>
+                <div class="motto-card cyber-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="motto-icon">💥</div>
+                    <blockquote class="motto-text">"Real hackers build, break, and never beg."</blockquote>
+                </div>
+                <div class="motto-card cyber-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="motto-icon">♻️</div>
+                    <blockquote class="motto-text">"Learn. Automate. Repeat. Outgrow them all."</blockquote>
+                </div>
+                <div class="motto-card cyber-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="motto-icon">🕶️</div>
+                    <blockquote class="motto-text">"Noise talks. Silence strikes."</blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="terminal-prompt">
+                    <span class="prompt">xeyronox@phantom~$</span>
+                    <span class="command">cat contact_info.txt</span>
+                </div>
+                <h2 class="section-title cyber-text">Secure Channels</h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-card cyber-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="contact-icon">📥</div>
+                    <div class="contact-info">
+                        <h3>Email</h3>
+                        <a href="mailto:xeyronox@outlook.com" class="contact-link">xeyronox@outlook.com</a>
+                    </div>
+                </div>
+                <div class="contact-card cyber-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="contact-icon">📷</div>
+                    <div class="contact-info">
+                        <h3>Instagram</h3>
+                        <a href="https://instagram.com/xeyronox" target="_blank" class="contact-link">@xeyronox</a>
+                    </div>
+                </div>
+                <div class="contact-card cyber-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="contact-icon">🌐</div>
+                    <div class="contact-info">
+                        <h3>Website</h3>
+                        <a href="https://xeyronox-shop.vercel.app/" target="_blank" class="contact-link">xeyronox-shop.vercel.app</a>
+                    </div>
+                </div>
+                <div class="contact-card cyber-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="contact-icon">🐙</div>
+                    <div class="contact-info">
+                        <h3>GitHub</h3>
+                        <a href="https://github.com/Xeyronox" target="_blank" class="contact-link">@Xeyronox</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">
+                    <span class="prompt">xeyronox@phantom~$</span>
+                    <span class="command">exit</span>
+                </p>
+                <p class="copyright">© 2025 XEYRONOX. All operations classified.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
